@@ -20,14 +20,17 @@ public class Application {
         Item item = new Item(1, p1, 3D);
         Item item1 = new Item(2, p1, 2D);
         Item item2 = new Item(3, p2, 2D);
+        Item item3 = new Item(4, p3, 1D);
+
         o1.add(item);
         o1.add(item1);
         o1.add(item2);
+        o1.add(item3);
 
         List<ProductQuantity> m = new ArrayList<>();
         m.add(new ProductQuantity(p1, 1D));
         m.add(new ProductQuantity(p2, 1D));
-        //m.add(new ProductQuantity(p3, 1D));
+        m.add(new ProductQuantity(p3, 1D));
 
         Promotion pr = new Promotion(1, m, BigDecimal.valueOf(17));
 
@@ -37,7 +40,7 @@ public class Application {
         priceInfo.setOrder(o1);
         priceInfo.setPromotions(Arrays.asList(pr));
 
-        promotionService.calcPrice(priceInfo);
+        System.out.println(promotionService.calcPrice(priceInfo));
 
     }
 
