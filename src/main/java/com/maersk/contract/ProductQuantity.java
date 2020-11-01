@@ -5,6 +5,11 @@ public class ProductQuantity {
     private Product product;
     private Double quantity;
 
+    public ProductQuantity (Product product, Double quantity) {
+        this.product = product;
+        this.quantity = quantity;
+    }
+
     public Product getProduct() {
         return product;
     }
