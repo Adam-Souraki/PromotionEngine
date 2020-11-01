@@ -6,7 +6,7 @@ public class Item {
     private Product product;
     private Double quantity;
 
-    public Item (Integer id, Product product, Double quantity) {
+    public Item(Integer id, Product product, Double quantity) {
         this.id = id;
         this.product = product;
         this.quantity = quantity;
